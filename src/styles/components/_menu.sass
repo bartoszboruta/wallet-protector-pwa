@@ -1,0 +1,44 @@
+.bm
+  &-burger-button
+    position: fixed
+    width: 36px
+    height: 30px
+    left: 22.5px
+    top: 22.5px
+
+  &-burger-bars
+    background: $color-secondary
+    &:hover
+      background: red
+
+  &-cross
+    background: #bdc3c7
+    &-button
+      height: 24px
+      width: 24px
+
+  &-menu
+    background: $color-background
+    padding: 2.5em 1.5em 0
+    font-size: 1.15em
+
+  &-morph-shape
+    fill: $color-secondary
+
+  &-item
+    color: $color-primary
+    display: inline-block
+    font-size: 1.1em
+    font-weight: 800
+    padding: 0.5em
+    text-decoration: none
+    &.active
+      color: $color-primary-active
+    &:hover
+      color: $color-primary-active
+      opacity: 0.8
+    &-list
+      padding: 0.8em
+
+  &-overlay
+    background: rgba(0, 0, 0, 0.3)

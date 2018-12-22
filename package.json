@@ -2,16 +2,29 @@
   "name": "wallet-protector-pwa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bartoszboruta.github.io/wallet-protector-pwa/",
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.1"
+    "classnames": "^2.2.6",
+    "dexie": "^2.0.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0-alpha.2",
+    "react-burger-menu": "^2.5.4",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "react-toastify": "^4.5.1",
+    "tesseract.js": "^1.0.14"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "NODE_PATH=src/ react-scripts start",
+    "build": "NODE_PATH=src/ react-scripts build",
+    "build-css": "node-sass-chokidar src/styles/ -o src/styles/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/styles/ -o src/styles/ --watch",
+    "test": "NODE_PATH=src/ react-scripts test",
+    "eject": "NODE_PATH=src/ react-scripts eject",
+    "pre-deploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +34,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@selleo/eslint-config-react": "^1.0.0",
+    "node-sass-chokidar": "^0.0.3",
+    "gh-pages": "^1.6.0"
+  }
 }
