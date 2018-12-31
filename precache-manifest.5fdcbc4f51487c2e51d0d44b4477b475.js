@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/wallet-protector-pwa/static/js/0.49fc9a26.chunk.js"
   },
   {
-    "revision": "0967c6bf476a1929717f",
-    "url": "/wallet-protector-pwa/static/js/main.0967c6bf.chunk.js"
+    "revision": "a278fa059a8288ea1e9e",
+    "url": "/wallet-protector-pwa/static/js/main.a278fa05.chunk.js"
   },
   {
     "revision": "f1341b4ede8e30e735df",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/wallet-protector-pwa/static/js/7.fe976cb9.chunk.js"
   },
   {
-    "revision": "0967c6bf476a1929717f",
+    "revision": "a278fa059a8288ea1e9e",
     "url": "/wallet-protector-pwa/static/css/main.aa9821d3.chunk.css"
   },
   {
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/wallet-protector-pwa/static/css/7.8001349f.chunk.css"
   },
   {
-    "revision": "a077770b57a586de41f24af30779d816",
+    "revision": "971cc17472941d20abfb8cfc5e2d9dcd",
     "url": "/wallet-protector-pwa/index.html"
   }
 ];
