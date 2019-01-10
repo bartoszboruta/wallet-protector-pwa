@@ -5,11 +5,13 @@ import 'react-toastify/dist/ReactToastify.min.css'
 
 import Menu from './Menu'
 import Header from './Header'
-import { FormProvider } from 'containers/Form/Context'
-import { CategoryProvider } from '../../containers/Category/Context'
+import { MainProvider } from 'containers/Main/Context'
+import { CategoryProvider } from 'containers/Category/Context'
+import { CounterProvider } from 'containers/Counter/Context'
+import { DataProvider } from 'containers/Data/Context'
 
 const Category = lazy(() => import('containers/Category'))
-const Form = lazy(() => import('containers/Form'))
+const Main = lazy(() => import('containers/Main'))
 const Settings = lazy(() => import('containers/Settings'))
 const Stats = lazy(() => import('containers/Stats'))
 
@@ -22,14 +24,18 @@ const Layout = () => (
       <Suspense fallback={<div>Loading...</div>}>
         <main id="page-wrap">
           <div className="container">
-            <CategoryProvider>
-              <FormProvider>
-                <Route component={Form} exact path="/" />
-              </FormProvider>
-              <Route component={Category} path="/category" />
-            </CategoryProvider>
-            <Route component={Settings} path="/settings" />
-            <Route component={Stats} path="/stats" />
+            <DataProvider>
+              <CounterProvider>
+                <CategoryProvider>
+                  <MainProvider>
+                    <Route component={Main} exact path="/" />
+                  </MainProvider>
+                  <Route component={Category} path="/category" />
+                </CategoryProvider>
+                <Route component={Settings} path="/settings" />
+                <Route component={Stats} path="/stats" />
+              </CounterProvider>
+            </DataProvider>
           </div>
         </main>
       </Suspense>
