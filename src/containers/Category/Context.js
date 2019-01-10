@@ -5,10 +5,17 @@ export const CategoryContext = React.createContext({})
 
 export const CategoryProvider = ({ children }) => {
   const [categories, setCategories] = useState([])
-  const [categoryId, setCategoryId] = useState(0)
+  const [categoryId, setCategoryId] = useState(parseInt(localStorage.getItem('categoryId')) || 0)
+
+  const _setCategoryId = categoryId => {
+    setCategoryId(categoryId)
+    localStorage.setItem('categoryId', categoryId)
+  }
 
   return (
-    <CategoryContext.Provider value={{ categories, setCategories, categoryId, setCategoryId }}>
+    <CategoryContext.Provider
+      value={{ categories, setCategories, categoryId, setCategoryId: _setCategoryId }}
+    >
       {children}
     </CategoryContext.Provider>
   )

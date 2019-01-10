@@ -4,8 +4,7 @@ import Add from './Add'
 
 const Category = () => {
   return (
-    <div>
-      <div>Category</div>
+    <div className="category">
       <Add />
     </div>
   )

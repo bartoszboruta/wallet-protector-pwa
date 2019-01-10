@@ -7,7 +7,8 @@ const New = () => {
   const { categories, setCategories } = useContext(CategoryContext)
   const [name, setName] = useState('')
 
-  const addCategory = () => {
+  const addCategory = event => {
+    event.preventDefault()
     const _date = new Date()
     const category = { name, createdAt: _date, updatedAt: _date }
 
@@ -22,17 +23,21 @@ const New = () => {
   }
 
   return (
-    <div>
-      <input
-        name="name"
-        onChange={({ target: { value } }) => {
-          setName(value)
-        }}
-        value={name}
-      />
-      <button disabled={!name} onClick={addCategory}>
-        Add
-      </button>
+    <div className="category__new">
+      <h4>New category</h4>
+      <form className="form" onSubmit={addCategory}>
+        <input
+          className="input"
+          name="name"
+          onChange={({ target: { value } }) => {
+            setName(value)
+          }}
+          value={name}
+        />
+        <button className="btn" disabled={!name}>
+          Add
+        </button>
+      </form>
     </div>
   )
 }
