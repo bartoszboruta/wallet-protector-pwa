@@ -23,7 +23,6 @@ const List = () => {
     return (
       <div className={categoryClass} key={id} onClick={() => setCategoryId(id)}>
         {name}
-        {id}
       </div>
     )
   })

@@ -506,6 +506,8 @@ h4 {
         margin: 0.75em;
         max-width: 120px;
         padding: 0.5em 1.1em; }
+        .main .categories__container .category a {
+          text-decoration: none; }
         .main .categories__container .category.active {
           background: #b8b7ad;
           color: #455C7B; }
