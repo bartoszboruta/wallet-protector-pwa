@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a3e33e30aefac59e4ebc",
-    "url": "/wallet-protector-pwa/static/js/5.a3e33e30.chunk.js"
+    "revision": "2ffcb2e068328be7d765",
+    "url": "/wallet-protector-pwa/static/js/5.2ffcb2e0.chunk.js"
   },
   {
-    "revision": "66d6db7d90d5599dae4b",
-    "url": "/wallet-protector-pwa/static/css/main.dbdf65eb.chunk.css"
+    "revision": "c4ba4b55658d2205bdec",
+    "url": "/wallet-protector-pwa/static/css/main.67117f71.chunk.css"
   },
   {
     "revision": "d56fa8a64c11ab02ae5a",
@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "/wallet-protector-pwa/static/js/4.69c15e48.chunk.js"
   },
   {
-    "revision": "66d6db7d90d5599dae4b",
-    "url": "/wallet-protector-pwa/static/js/main.66d6db7d.chunk.js"
+    "revision": "c4ba4b55658d2205bdec",
+    "url": "/wallet-protector-pwa/static/js/main.c4ba4b55.chunk.js"
   },
   {
     "revision": "2eb89516a365cd25e083",
     "url": "/wallet-protector-pwa/static/js/6.2eb89516.chunk.js"
   },
   {
-    "revision": "9935eadc4aca24b0cf40",
-    "url": "/wallet-protector-pwa/static/js/runtime~main.9935eadc.js"
+    "revision": "98079845c38cf3461e08",
+    "url": "/wallet-protector-pwa/static/js/runtime~main.98079845.js"
   },
   {
     "revision": "76003c71ab397253c67f",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/wallet-protector-pwa/static/css/7.d6e6713e.chunk.css"
   },
   {
-    "revision": "5a54eaa67b4c17825c50d1fe26109071",
+    "revision": "3291b549803222accfb1f89def64ccd6",
     "url": "/wallet-protector-pwa/index.html"
   }
 ];
