@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/wallet-protector-pwa/precache-manifest.f19de4ec5868afed1b30e764ba65f69e.js"
+  "/wallet-protector-pwa/precache-manifest.94d48fc9e2dd16581732e5f1a3aecc09.js"
 );
 
 workbox.clientsClaim();

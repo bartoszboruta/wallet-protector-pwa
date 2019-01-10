@@ -1,7 +1,7 @@
 {
   "main.css": "/wallet-protector-pwa/static/css/main.67117f71.chunk.css",
-  "main.js": "/wallet-protector-pwa/static/js/main.c4ba4b55.chunk.js",
-  "main.js.map": "/wallet-protector-pwa/static/js/main.c4ba4b55.chunk.js.map",
+  "main.js": "/wallet-protector-pwa/static/js/main.072283ac.chunk.js",
+  "main.js.map": "/wallet-protector-pwa/static/js/main.072283ac.chunk.js.map",
   "static/js/1.d56fa8a6.chunk.js": "/wallet-protector-pwa/static/js/1.d56fa8a6.chunk.js",
   "static/js/1.d56fa8a6.chunk.js.map": "/wallet-protector-pwa/static/js/1.d56fa8a6.chunk.js.map",
   "static/js/2.30e94e4f.chunk.js": "/wallet-protector-pwa/static/js/2.30e94e4f.chunk.js",
@@ -22,6 +22,6 @@
   "static/css/7.d6e6713e.chunk.css.map": "/wallet-protector-pwa/static/css/7.d6e6713e.chunk.css.map",
   "static/css/main.67117f71.chunk.css.map": "/wallet-protector-pwa/static/css/main.67117f71.chunk.css.map",
   "index.html": "/wallet-protector-pwa/index.html",
-  "precache-manifest.f19de4ec5868afed1b30e764ba65f69e.js": "/wallet-protector-pwa/precache-manifest.f19de4ec5868afed1b30e764ba65f69e.js",
+  "precache-manifest.94d48fc9e2dd16581732e5f1a3aecc09.js": "/wallet-protector-pwa/precache-manifest.94d48fc9e2dd16581732e5f1a3aecc09.js",
   "service-worker.js": "/wallet-protector-pwa/service-worker.js"
 }
