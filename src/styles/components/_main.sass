@@ -1,17 +1,44 @@
   
-.form
+.main
   display: flex
   flex-direction: column
 
   .content
     display: flex
-    flex-direction: row
+    flex-direction: column
     align-items: center
     justify-content: center
 
-  +media-breakpoint-down(xs)
-    .content
-      flex-direction: column
+    .form
+      align-items: center
+      display: flex
+      flex-direction: row
+    +media-breakpoint-down(xs)
+      .form
+        flex-direction: column
+
+    .counters
+      width: 100%
+      color: blue
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      letter-spacing: 1px
+
+      .counter
+        align-items: center
+        display: flex
+        flex-direction: column
+        &__value
+          font-size: $font-size-sm
+          color: $color-primary
+        &__label
+          color: $color-secondary
+          font-size: $font-size-xs
+          font-weight: 800
+          text:
+            align: center
+            transform: uppercase
 
   .drawfield
     align-items: center
@@ -25,13 +52,15 @@
     color: #373a47
     font-weight: 800
 
-
     &__header
       display: flex
       flex-direction: row
       justify-content: center
       margin: 0.75em
       font-size: 1.5em
+
+      &.--inactive
+        color: $color-primary-active
 
     &__container
       align-content: space-between
@@ -45,7 +74,6 @@
         font-weight: 800
         justify-content: center
         letter-spacing: 1px
-
 
       .category
         cursor: pointer

@@ -357,14 +357,21 @@ header {
   box-shadow: 0 0 15px rgba(4, 8, 12, 0.2);
   color: #b8b7ad;
   display: flex;
-  font-size: 2em;
+  font-size: 20px;
   font-weight: 800;
   height: 75px;
   justify-content: center;
   position: fixed;
+  text-transform: uppercase;
   top: 0;
   width: 100%;
   z-index: 10; }
+
+h4 {
+  color: #b8b7ad;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase; }
 
 .container {
   height: 100vh;
@@ -413,44 +420,80 @@ header {
   border-bottom-right-radius: 50px 50px;
   border-bottom-left-radius: 50px 50px; }
 
-.form {
+.category__new {
+  align-items: center;
   display: flex;
   flex-direction: column; }
-  .form .content {
+
+.category .form {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.main {
+  display: flex;
+  flex-direction: column; }
+  .main .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center; }
-  @media (max-width: 575.99px) {
-    .form .content {
-      flex-direction: column; } }
-  .form .drawfield {
+    .main .content .form {
+      align-items: center;
+      display: flex;
+      flex-direction: row; }
+    @media (max-width: 575.99px) {
+      .main .content .form {
+        flex-direction: column; } }
+    .main .content .counters {
+      width: 100%;
+      color: blue;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      letter-spacing: 1px; }
+      .main .content .counters .counter {
+        align-items: center;
+        display: flex;
+        flex-direction: column; }
+        .main .content .counters .counter__value {
+          font-size: 13px;
+          color: #b8b7ad; }
+        .main .content .counters .counter__label {
+          color: #373a47;
+          font-size: 11px;
+          font-weight: 800;
+          text-align: center;
+          text-transform: uppercase; }
+  .main .drawfield {
     align-items: center;
     display: flex;
     flex-direction: column; }
-    .form .drawfield canvas {
+    .main .drawfield canvas {
       border: 1px solid gray; }
-  .form .categories {
+  .main .categories {
     color: #373a47;
     font-weight: 800; }
-    .form .categories__header {
+    .main .categories__header {
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin: 0.75em;
       font-size: 1.5em; }
-    .form .categories__container {
+      .main .categories__header.--inactive {
+        color: #c75353; }
+    .main .categories__container {
       align-content: space-between;
       display: flex;
       flex-flow: wrap;
       justify-content: space-between; }
-      .form .categories__container__empty {
+      .main .categories__container__empty {
         color: #b8b7ad;
         display: flex;
         font-weight: 800;
         justify-content: center;
         letter-spacing: 1px; }
-      .form .categories__container .category {
+      .main .categories__container .category {
         cursor: pointer;
         border: 2px #b8b7ad solid;
         border-bottom-left-radius: 50px 50px;
@@ -463,6 +506,6 @@ header {
         margin: 0.75em;
         max-width: 120px;
         padding: 0.5em 1.1em; }
-        .form .categories__container .category.active {
+        .main .categories__container .category.active {
           background: #b8b7ad;
           color: #455C7B; }
