@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 import Tesseract from 'tesseract.js'
 
-import { FormContext } from 'containers/Form/Context'
+import { MainContext } from 'containers/Main/Context'
 import DrawField from 'components/DrawField'
 
 const ImageRecognizer = () => {
-  const { setCost } = useContext(FormContext)
+  const { setCost } = useContext(MainContext)
 
   const _handleDrawEnd = image => {
     Tesseract.recognize(image, {
